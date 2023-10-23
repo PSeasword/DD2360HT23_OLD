@@ -13,10 +13,4 @@ with vector lengths 1024 and 131070, respectively. To obtain data for further ve
 ./furtherVectorLengths.sh
 ```
 
-and then
-
-```
-./plotFurtherVectorLengths.py
-```
-
-to plot a stacked bar chart of the collected data.
+where `plotFurtherVectorLengths.py` is used to plot a stacked bar chart of the collected data.
