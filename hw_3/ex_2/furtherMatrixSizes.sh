@@ -11,5 +11,8 @@ inputDim3=4150
 echo "Writing outputs to output.txt"
 
 for inputDim1 in "${inputDims1[@]}"; do
+  echo "Currently doing $inputDim1 $inputDim2 $inputDim3"
   ./lab3_ex2.out "$inputDim1" "$inputDim2" "$inputDim3" >> output.txt
 done
+
+cat output.txt
