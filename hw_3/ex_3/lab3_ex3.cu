@@ -31,11 +31,11 @@ __global__ void histogram_kernel(unsigned int *input, unsigned int *bins, unsign
 
   // All bins this thread should initialize to 0
   const int startSharedBin = threadIdx.x * SHARED_MEMORY_BINS_PER_THREAD;
-  const int endSharedBin = (threadIdx.x + 1) * SHARED_MEMORY_BINS_PER_THREAD;
+  int endSharedBin = (threadIdx.x + 1) * SHARED_MEMORY_BINS_PER_THREAD;
 
   // All input values this thread should process
   const int startInputValue = id * INPUT_VALUES_PER_THREAD;
-  const int endInputValue = (id + 1) * INPUT_VALUES_PER_THREAD;
+  int endInputValue = (id + 1) * INPUT_VALUES_PER_THREAD;
 
   // Set shared memory to 0
   if (startSharedBin < NUM_BINS) {
