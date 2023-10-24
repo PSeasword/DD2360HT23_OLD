@@ -8,7 +8,7 @@ nsteps=1000
 
 echo "Using dimX $dimX and nsteps $nsteps"
 
-echo "==================== Using prefetching ===================="
+echo "==================== With prefetching ===================="
 
 for i in {1..1}; do
   nvprof --output-profile profileEx3WithPrefetching.nvvp -f ./lab4_ex4.out "$dimX" "$nsteps" 1
@@ -18,7 +18,7 @@ done
 
 echo ""
 
-echo "==================== Not using prefetching ====================" >> "$outputFile"
+echo "==================== Without prefetching ====================" >> "$outputFile"
 
 for i in {1..1}; do
   nvprof --output-profile profileEx3WithoutPrefetching.nvvp -f ./lab4_ex4.out "$dimX" "$nsteps" 0
