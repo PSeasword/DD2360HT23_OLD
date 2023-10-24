@@ -3,25 +3,25 @@
 Run
 
 ```
-profileLab3Ex2.sh
+./profileLab3Ex2.sh
 ```
 
-to USE `nvprof`on original code in `hw_3/ex_2/`,
+to use `nvprof`on original code found in `hw_3/ex_2/`,
 
 ```
-profilePinned.sh
+./profilePinned.sh
 ```
 
 when pinned memory has been implemented,
 
 ```
-profileUnified.sh
+./profileUnified.sh
 ```
 
 when unified memory has been implemented, and finally
 
 ```
-profileUnifiedPrefetching.sh
+./profileUnifiedPrefetching.sh
 ```
 
 when unified memory with prefetching has been implemented.
