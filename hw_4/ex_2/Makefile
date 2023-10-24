@@ -17,7 +17,8 @@ $(OUT4P): $(SRC4P)
 	nvcc -arch=sm_60 --default-stream per-thread $< -o $@
 
 clean:
-	rm -f $(OUT3)
-	rm -f $(OUT3P)
-	rm -f $(OUT4P)
+	rm -f $(OUT3) $(OUT3P) $(OUT4P)
 	rm -f profileEx2.nvvp
+	rm -f output_lab3_ex1.txt output_lab3_ex1_pinned.txt output_lab4_ex2.txt
+	rm -f output_segment_4.txt
+	rm -f output_segment_varying.txt
