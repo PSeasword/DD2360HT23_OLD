@@ -18,4 +18,10 @@ to get the output for different `nsteps` between 100 and 100000 when `dimX` is 1
 ./comparePrefetching.sh
 ```
 
-to profile with `nvprof` and create files for `nvvp`, with prefetching and without prefetching, where `plotComparePrefetching.py` is used to compare the achieved throughput in FLOPS for different `dimX` and `nsteps` values.
+to get output data to compare the performance in terms of throughput in FLOPS with prefetching and without prefetching where `plotComparePrefetching.py` is used to plot the achieved throughputs for different `dimX` and `nsteps` values. Run
+
+```
+./metricsUnified.sh
+```
+
+to profile with `nvprof` and create files for `nvvp`, with prefetching and without prefetching.
