@@ -3,37 +3,19 @@
 Run
 
 ```
-differentDimX.sh
+./differentDimX.sh
 ```
 
-to get the output, such as FLOPS, for different `dimX` and `nsteps` values and then
+to get the output, such as FLOPS, for different `dimX` and `nsteps` values where `createLaTeXTableFLOPS.py` is used to get the data in a format that can be added to a LaTeX table. Run
 
 ```
-createLaTeXTableFLOPS.py
+./differentNSteps.sh
 ```
 
-to get the data in a format that can be added to a LaTeX table. Run
+to get the output for different `nsteps` between 100 and 100000 when `dimX` is 128 where `plotRelativeError.py` is used to plot the resulting relative error. Run
 
 ```
-differentNSteps.sh
+./comparePrefetching.sh
 ```
 
-to get the output for different `nsteps` from 100 to 100000 when `dimX` is 128 and then
-
-```
-plotRelativeError.py
-```
-
-to plot the relative error for different `nsteps` values. Run
-
-```
-comparePrefetching.sh
-```
-
-to use `nvprof`, and create files for `nvvp`, when prefetching is enable and disabled and then
-
-```
-plotComparePrefetching.py
-```
-
-to compare the achieved throughput in FLOPS for different `dimX` and `nsteps` values.
+to profile with `nvprof` and create files for `nvvp`, with prefetching and without prefetching, where `plotComparePrefetching.py` is used to compare the achieved throughput in FLOPS for different `dimX` and `nsteps` values.
