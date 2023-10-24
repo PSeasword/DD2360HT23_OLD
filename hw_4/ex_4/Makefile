@@ -7,4 +7,4 @@ all:
 clean:
 	rm -f $(OUT)
 	rm -f outputPrefetching.txt outputDifferentDimX.txt outputDifferentNSteps.txt
-	rm -f profileEx3WithoutPrefetching.nvvp profileEx3WithPrefetching.nvvp
+	rm -f withoutPrefetching.nvvp withPrefetching.nvvp
