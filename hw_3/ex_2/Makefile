@@ -5,4 +5,4 @@ all:
 	nvcc -arch=sm_60 $(SRC) -o $(OUT)
 
 clean:
-	rm -f $(OUT)
+	rm -f $(OUT) output_matrix_sizes.txt
