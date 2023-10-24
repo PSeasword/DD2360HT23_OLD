@@ -13,4 +13,4 @@ for A (128x128) and B (128x128), and  A (511x1023) and B (1023x4094), respective
 ./furtherMatrixSizes.sh
 ```
 
-where `plotFurtherMatrixSizes.py` is used to plot a stacked bar chart of the collected data.
+where `plotFurtherMatrixSizes.py` is used to plot a stacked bar chart of the collected data as well as output the exact values in a format that can be copied into a LaTeX table.
