@@ -5,4 +5,4 @@ all:
 	nvcc -arch=sm_60 --default-stream per-thread -lcusparse -lcublas $(SRC) -o $(OUT)
 
 clean:
-	rm -f $(OUT)
+	rm -f $(OUT) outputPrefetching.txt outputDifferentDimX.txt outputDifferentNSteps.txt
