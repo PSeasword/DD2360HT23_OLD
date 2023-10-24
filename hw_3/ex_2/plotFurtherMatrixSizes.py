@@ -11,7 +11,7 @@ deviceToHost = []
 
 table = ""
 
-with open("output.txt", "r") as file:
+with open("output_matrix_sizes.txt", "r") as file:
     for line in file:
       if "Input matrix dim" in line:
         dim = line.split("dim")[1].strip()
