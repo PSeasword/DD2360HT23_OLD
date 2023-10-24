@@ -7,7 +7,7 @@ hostToDevice = []
 kernel = []
 deviceToHost = []
 
-with open("output.txt", "r") as file:
+with open("output_vector_lengths.txt", "r") as file:
     for line in file:
       if "The input length is" in line:
         inputLengths.append(line.split("is")[1].strip())
