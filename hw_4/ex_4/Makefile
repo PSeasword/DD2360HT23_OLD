@@ -5,4 +5,6 @@ all:
 	nvcc -arch=sm_60 --default-stream per-thread -lcusparse -lcublas $(SRC) -o $(OUT)
 
 clean:
-	rm -f $(OUT) outputPrefetching.txt outputDifferentDimX.txt outputDifferentNSteps.txt
+	rm -f $(OUT)
+	rm -f outputPrefetching.txt outputDifferentDimX.txt outputDifferentNSteps.txt
+	rm -f profileEx3WithoutPrefetching.nvvp profileEx3WithPrefetching.nvvp
