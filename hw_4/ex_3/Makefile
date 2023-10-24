@@ -17,6 +17,4 @@ $(OUT4U): $(SRC4U)
 	nvcc -arch=sm_60 --default-stream per-thread $< -o $@
 
 clean:
-	rm -f $(OUT3)
-	rm -f $(OUT4P)
-	rm -f $(OUT4U)
+	rm -f $(OUT3) $(OUT4P) $(OUT4U)
