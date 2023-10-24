@@ -11,3 +11,5 @@ echo "Writing outputs to output_vector_lengths.txt"
 for inputLength in "${inputLengths[@]}"; do
   ./lab3_ex1.out "$inputLength" >> output_vector_lengths.txt
 done
+
+cat output_vector_lengths.txt
