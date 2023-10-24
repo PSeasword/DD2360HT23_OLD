@@ -20,3 +20,4 @@ clean:
 	rm -f $(OUT3)
 	rm -f $(OUT3P)
 	rm -f $(OUT4P)
+	rm -f profileEx2.nvvp
