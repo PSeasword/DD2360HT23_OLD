@@ -18,7 +18,7 @@ done
 
 echo ""
 
-echo "==================== Without prefetching ====================" >> "$outputFile"
+echo "==================== Without prefetching ===================="
 
 for i in {1..1}; do
   nvprof --output-profile profileEx3WithoutPrefetching.nvvp -f ./lab4_ex4.out "$dimX" "$nsteps" 0
