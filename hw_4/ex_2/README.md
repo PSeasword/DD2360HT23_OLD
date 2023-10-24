@@ -3,31 +3,19 @@
 To compare the use of streams to without streams with and without pinned memory, run
 
 ```
-compareToPrevious.sh
+./compareToPrevious.sh
 ```
 
-and then
+where `plotCompareToPrevious.py`is used to plot the results. Run
 
 ```
-plotCompareToPrevious.py
+./createFileNVVP.sh
 ```
 
-to plot the results. Run
+to collect traces for NVIDIA Visual Profiler. To get output data for different segment sizes, using 4 streams or a varying number of streams so that each stream only performs one round of transfers, run
 
 ```
-createFileNVVP.sh
+./differentSegmentSizes.sh
 ```
 
-to collect traces for NVIDIA Visual Profiler. To get output data for different segment sizes, using 4 streams or varying number of streams so that each stream only performs one round of transfers each, run
-
-```
-differentSegmentSizes.sh
-```
-
-and then
-
-```
-plotDifferentSegmentSizes.py
-```
-
-to plot the results.
+where `plotDifferentSegmentSizes.py` is used to plot the results.
